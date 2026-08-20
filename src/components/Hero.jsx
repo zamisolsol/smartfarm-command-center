@@ -17,10 +17,10 @@ export default function Hero() {
         <a className="hero-start" href="#command">지금 시작하기 <ArrowUpRight /></a>
       </div>
 
-      <div className="hero-visual" aria-label="6축 로봇팔 개념도">
+      {/* <div className="hero-visual" aria-label="6축 로봇팔 개념도">
         <div className="hero-arm-watermark">ARM</div>
         <svg viewBox="0 0 730 360" className="hero-arm" aria-hidden="true">
-          <path d="M231 306V237L405 175V80L573 35" fill="none" stroke="#141713" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M231 306V237L405 175V80L573 35" fill="none" stroke="#43852d" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M573 35l44-25M573 35l42 25" fill="none" stroke="#ff5549" strokeWidth="9" strokeLinecap="round" />
           <circle cx="231" cy="306" r="29" fill="#fff" stroke="#141713" strokeWidth="8" />
           <circle cx="405" cy="175" r="14" fill="#141713" />
@@ -28,7 +28,16 @@ export default function Hero() {
           <path d="M185 218h47v88" fill="none" stroke="#141713" strokeWidth="7" strokeLinecap="round" />
         </svg>
         <div className="visual-actions"><a href="#vision">↗ 라이브 모니터링</a><span>6축 로봇팔 · 줄기 절단 시스템</span></div>
-      </div>
+      </div> */}
+
+    <div className="hero-visual" aria-label="6축 로봇팔">
+      <img
+        src={`${import.meta.env.BASE_URL}media/robot.png`}
+        alt="6축 로봇팔"
+        className="hero-robot-image"
+      />
+    </div>
+    
 
       <div className="hero-metrics">
         {highlights.map(([value, label]) => <div className="hero-metric" key={label}><strong>{value}</strong><span>{label}</span></div>)}

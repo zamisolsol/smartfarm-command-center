@@ -18,10 +18,39 @@ a { color: inherit; text-decoration: none; }
 .brand { position: relative; display: grid; grid-template-columns: 34px auto; grid-template-rows: 21px 13px; align-items: center; font-size: 19px; font-weight: 900; line-height: 1; letter-spacing: -1.2px; }.brand > span:not(.brand-mark) { color: #151715; }.brand-mark { grid-row: 1 / 3; display: grid; place-items: center; width: 21px; height: 21px; color: #111; border: 1.5px solid #111; border-radius: 4px; font-size: 16px; line-height: 1; }.brand small { grid-column: 2; color: #71716b; font-family: ui-monospace, Consolas, monospace; font-size: 9px; letter-spacing: 1.25px; }
 .topbar nav { display: flex; gap: clamp(28px, 4vw, 65px); margin-left: 12vw; }.topbar nav a { color: #686961; padding: 39px 0 36px; border-bottom: 2px solid transparent; font-size: 15px; font-weight: 700; letter-spacing: -1px; }.topbar nav a:hover, .topbar nav a.active { color: #111; border-color: #111; }
 .control-cta { padding: 16px 23px; border-radius: 99px; background: #ff5549; color: #fff; font-size: 15px; font-weight: 800; letter-spacing: -1px; transition: transform .2s, background .2s; }.control-cta:hover { background: #ef4439; transform: translateY(-2px); }
+.hero-visual {
+  position: relative;
+  width: min(100%, 1080px);
+  height: 430px;
+  margin-top: clamp(58px, 5vw, 82px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: visible;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+.hero-robot-image {
+  display: block;
+
+  width: auto;
+  height: 450px;
+  max-width: 90%;
+
+  object-fit: contain;
+}
+.status-robot-image {
+  width: auto;
+  height: 220px;
+  max-width: 130%;
+  object-fit: contain;
+}
 .feed-summary i, .source-value i, .machine-state i { display: inline-block; width: 7px; height: 7px; background: #88c665; border-radius: 99px; margin-right: 5px; box-shadow: 0 0 0 4px rgba(130, 198, 101, .13); }
 
 .hero-section { display: flex; flex-direction: column; align-items: center; padding: clamp(88px, 7vw, 125px) clamp(22px, 5vw, 82px) 62px; background: #f6f5f0; }.hero-copy { text-align: center; }.hero-kicker { margin: 0 0 27px; color: #ff5549; font-family: ui-monospace, Consolas, monospace; font-size: 14px; font-weight: 800; letter-spacing: 4px; }.hero-copy h1 { color: #111310; font-size: clamp(58px, 7.25vw, 112px); line-height: .99; letter-spacing: -8px; }.hero-copy h1 em { font-family: inherit; }.hero-description { max-width: 680px; margin: 27px auto 31px; color: #62645c; font-family: "Noto Serif KR", "Batang", serif; font-size: clamp(16px, 1.35vw, 22px); line-height: 1.85; letter-spacing: -1.1px; }.hero-start { display: inline-flex; gap: 11px; align-items: center; padding: 19px 32px; border-radius: 99px; background: #ff5549; color: #fff; font-size: 18px; font-weight: 800; letter-spacing: -1.4px; transition: transform .2s, background .2s; }.hero-start:hover { background: #e94539; transform: translateY(-2px); }.hero-start .icon-arrow { font-size: 23px; }
-.hero-visual { position: relative; width: min(100%, 1080px); height: 430px; margin-top: clamp(58px, 5vw, 82px); overflow: hidden; border: 1px solid #dfded7; border-radius: 28px 28px 0 0; background: #fff; }.hero-arm-watermark { position: absolute; top: 57px; left: 50%; transform: translateX(-50%); color: #e4e3dc; font-size: clamp(130px, 19vw, 298px); line-height: 1; font-weight: 900; letter-spacing: -20px; }.hero-arm { position: absolute; z-index: 1; top: 20px; left: 50%; width: min(72%, 730px); height: 360px; transform: translateX(-50%); }.visual-actions { position: absolute; z-index: 2; bottom: 30px; left: 30px; display: flex; gap: 13px; align-items: center; }.visual-actions a, .visual-actions span { padding: 15px 19px; border-radius: 99px; font-size: 13px; font-weight: 800; letter-spacing: -1px; }.visual-actions a { color: #fff; background: #111; }.visual-actions span { color: #6a6c63; border: 1px solid #deddd6; background: #fff; }
 .hero-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; width: min(100%, 1020px); margin-top: 30px; }.hero-metric { min-height: 122px; padding: 24px 29px; border: 1px solid #dfded7; border-radius: 21px; background: #fff; }.hero-metric strong { display: block; color: #121310; font-size: clamp(38px, 4vw, 58px); line-height: .9; letter-spacing: -4px; }.hero-metric span { display: block; margin-top: 13px; color: #64655e; font-size: 13px; font-weight: 700; letter-spacing: -1px; }
 .control-section { border-top: 1px solid #deded7; }
 

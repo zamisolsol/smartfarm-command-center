@@ -99,7 +99,7 @@ export default function App() {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="FARM LAB 홈"><span className="brand-mark">♧</span><span>FARM // LAB</span><small>ROBOTIC CROP CARE</small></a>
+        <a className="brand" href="#home" aria-label="FARM LAB 홈"><span className="brand-mark">♧</span><span>NIARMSTRONG</span><small>ROBOTIC CROP CARE</small></a>
         <nav aria-label="주요 메뉴"><a className="active" href="#home">홈</a><a href="#vision">비전 시스템</a><a href="#command">컨트롤룸</a><a href="#research">연구</a></nav>
         <a className="control-cta" href="#command">제어실 열기</a>
       </header>
